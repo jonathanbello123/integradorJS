@@ -1,12 +1,32 @@
+:root {
+    --background-color: rgba(0, 0, 0, 0.4);
+    --text: #ffffff;
+    --text-especial: #ffff00;
+    --btnsub: #ADFF2F;
+    --btntext: #000000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: "Oswald";
+
+}
+
 body {
-    background-image: url(/Assets/bg3.jpg);
+    background-image: url(/Assets//bgs/bg1.jpg);
+    background-repeat: no-repeat;
+
 }
 
 #main_login {
 
     margin-top: 200px;
     width: 100%;
-    height: 60%;
+    height: 0%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -19,18 +39,18 @@ body {
     padding: 20px;
     border-bottom: 1px solid #ccc;
     border-radius: 5px;
-    background-color: rgba(0, 0, 0, 0.3)
+    background-color: var(--background-color);
 }
 
 h2 {
     text-align: center;
-    color: white;
+    color: var(--text);
 
 }
 
 .form-group {
     margin-bottom: 15px;
-    color: white;
+    color: var(--text);
 }
 
 label {
@@ -51,14 +71,14 @@ input[type="submit"] {
     padding: 8px;
     background-color: rgba(0, 0, 0, 0.4);
     color: black;
-    background-color: greenyellow;
+    background-color: var(--btnsub);
     border: none;
     border-radius: 3px;
     cursor: pointer;
 }
 
 input[type="submit"]:hover {
-    background-color: yellow;
+    background-color: var(--btnsub);
     color: black;
 }
 
@@ -69,16 +89,16 @@ input[type="submit"]:hover {
 
 .olvide {
     cursor: pointer;
-    color: yellow;
+    color: var(--text-especial);
     border: 2px solid rgba(0, 0, 0, 0.6);
     border-radius: 20px;
 }
 
 .no-c {
-    color: white;
+    color: var(--text);
     margin-top: 30px;
 }
 
 .Register {
-    color: yellow;
+    color: var(--text-especial);
 }

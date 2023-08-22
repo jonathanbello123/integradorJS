@@ -1,16 +1,31 @@
-#body_login {
+:root {
+    --background-color: rgba(0, 0, 0, 0.4);
+    --text: #ffffff;
+    --text-especial: #ffff00;
+    --btnsub: #ADFF2F;
+    --btntext: #000000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: "Oswald";
+
+}
+
+body {
     height: 900px;
-    background-image: url(assets/main-fondo/disposicion-elementos-cine-sobre-fondo-negro-espacio-copia.jpg);
-    background-size: cover;
 }
 
 #main_registro {
     width: 100%;
-    height: 60%;
+    padding-top: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 200px;
 }
 
 .registro__sesion {
@@ -24,12 +39,12 @@
 
 h2 {
     text-align: center;
-    color: white;
+    color: var(--text);
 }
 
 .form-group {
     margin-bottom: 15px;
-    color: white;
+    color: var(--text);
 }
 
 label {
@@ -49,23 +64,23 @@ input[type="email"] {
 input[type="submit"] {
     width: 100%;
     padding: 8px;
-    background-color: greenyellow;
-    color: black;
+    background-color: var(--btnsub);
+    color: var(--btntext);
     border: none;
     border-radius: 3px;
     cursor: pointer;
 }
 
 input[type="submit"]:hover {
-    background-color: yellow;
-    color: black;
+    background-color: var(--text-especial);
+    color: var(--btntext);
 }
 
 
 .no-c {
-    color: white;
+    color: var(--text);
 }
 
 .Register {
-    color: yellow;
+    color: var(--text-especial);
 }

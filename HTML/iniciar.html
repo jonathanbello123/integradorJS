@@ -5,21 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pulse Gym</title>
-    <link rel="shortcut icon" href="/Assets/Favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="media.css">
+    <link rel="shortcut icon" href="/Assets/wpp/whatsapp.png" type="image/x-icon">
+    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="stylesheet" href="/CSS/media.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="login.css">
-    <link rel="stylesheet" href="register.css">
+    <link rel="stylesheet" href="/CSS/login.css">
 </head>
 
 <body>
-    <a href="/Assets/whatsapp.png" target="_blank"><img src="assets/whatsapp.png" alt="" class="whatsapp"></a>
+    <a href="" target="_blank"><img src="/Assets/wpp/whatsapp.png" alt="" class="whatsapp"></a>
     <header>
         <a href="index.html">
-            <img id="img-logo" src="/Assets/Favicon.png" alt=""></a>
+            <img id="img-logo" src="/Assets/favicon/Favicon.png" alt=""></a>
         <nav id="navbar-link">
 
             <ul id="nav-list">
@@ -36,38 +35,35 @@
 
             </ul>
         </nav>
-        <div class="xD">
+        <div class="menu-container">
             <label for="menu-toggle" class="menu-label">
-                <img src="/Assets/menu.png" alt="" class="menu-icon">
+                <img src="/Assets/nav/menu.png" alt="" class="menu-icon">
             </label>
+
         </div>
     </header>
-    <main id="main_registro">
-        <div class="registro__sesion">
-            <h2>Registro</h2>
+    <main id="main_login">
+        <div class="inicio__sesion">
+            <h2>Inicio de Sesión</h2>
             <form>
                 <div class="form-group">
                     <label for="username">Email:</label>
-                    <input type="email" id="username" name="username" required>
-                </div>
-                <div class="form-group">
-                    <label for="username">Nombre de usuario:</label>
                     <input type="text" id="username" name="username" required>
                 </div>
                 <div class="form-group">
-                    <label for="username">Contraseña:</label>
-                    <input type="text" id="username" name="username" required>
-                </div>
-                <div class="form-group">
-                    <label for="password"> Repite Contraseña:</label>
+                    <label for="password">Contraseña:</label>
                     <input type="password" id="password" name="password" required>
+                    <div class="olvide-container">
+                        <span class="olvide">olvide mi Contraseña</span>
+                    </div>
+
                 </div>
                 <input type="submit" value="Iniciar Sesión">
 
             </form>
-            <br>
-            <h3 class="no-c">Ya tienes una cuenta? <a class="Register" href="iniciar.html">Entrar</a></h3>
+            <h3 class="no-c">No tienes cuenta? <a class="Register" href="register.html">Registrarme</a></h3>
         </div>
 
     </main>
+
 </body>
